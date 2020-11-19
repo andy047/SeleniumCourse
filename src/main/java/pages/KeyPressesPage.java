@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -14,6 +15,9 @@ public class KeyPressesPage {
     }
     public void enterText(String text){
         driver.findElement(inputField).sendKeys(text);
+    }
+    public void enterPi(){
+        enterText(Keys.chord(Keys.ALT+"227"));
     }
     public String getResult(){
         return driver.findElement(result).getText();
