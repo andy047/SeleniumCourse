@@ -40,4 +40,9 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
+    public FileUploads clickFileUploads(){
+        clickLink("File Upload");
+        return new FileUploads(driver);
+    }
+
 }

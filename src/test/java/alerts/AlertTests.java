@@ -33,4 +33,5 @@ public class AlertTests extends BaseTests {
        assertEquals(alertPage.getResult(),"You entered: Aileen","Incorrect Result!");
 
     }
+
 }
