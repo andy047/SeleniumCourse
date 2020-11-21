@@ -45,4 +45,8 @@ public class HomePage {
         return new FileUploads(driver);
     }
 
+    public FramePage clickFrame(){
+        clickLink("WYSIWYG Editor");
+        return new FramePage(driver);
+    }
 }
